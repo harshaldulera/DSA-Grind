@@ -1,18 +1,18 @@
-// https://www.naukri.com/code360/problems/n-2-forest_6570178
-
 #include <bits/stdc++.h>
 using namespace std;
 
 #define PI 3.14
 #define long long ll
 
-void nForest(int n) {
+void triangle(int n ) {
+    int a = 1;
     for(int i = 0; i < n; i++) {
-		for(int j = 0; j <= i; j++) {
-			cout << "*" << " ";
-		}
-	    cout << endl;
-	}
+        for(int j = 0; j <= i; j++) {
+            cout << a << " ";
+        }
+        a++;
+        cout << endl;
+    }
 }
 
 int main () {
@@ -20,7 +20,7 @@ int main () {
     cin.tie(NULL);
 
     int n; cin >> n;
-    nForest(n);
+    triangle(n);
 
     return 0;
 }
